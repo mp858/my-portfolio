@@ -373,8 +373,13 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 700px){
-    *{
+   *{
         margin-left:0;
+    }
+    body{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
     .header_text{
         font-size:16px;
@@ -442,8 +447,15 @@ nav .fa-solid{
        padding:20px;
     }
     .work img, .layer{
-        width:70%;
+        width:80%;
         font-size:10px;
+
+    }
+    .layer a{
+        width:30px;
+        height:30px;
+        line-height:30px;
+        margin-bottom:20px;
     }
     .con-left, .con-right{
         flex-basis: 100%;

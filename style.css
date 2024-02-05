@@ -190,47 +190,53 @@ width:50%
 .tab-contents.active-tab{
     display:block;
 }
-/* --------------------services----------- */
-#services{
+/* --------------------coding profiles----------- */
+#codingprofile{
     padding: 30px 0;
 }
-.service-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 140px;
+.profile-list{
+    display:flex;
     margin-top:50px;
-    margin-right:30px;
+    margin-right:20px;
 
 }
-.service-list div{
-    background: #262626;
-    padding: 40px;
+.profile-list a{
+    /* background: #262626; */
+    padding: 20px;
     font-size:13px;
     font-weight: 300;
+    margin-right:15px;
+    margin-left:0;
     border-radius:10px;
     transition: background 0.7s,transfor 0.7s;
+    border-radius:10%;
 
 }
-.service-list div:hover{
+.profile-list a:hover{
     background:#ff004f;
     transform: translateY(-10px);
 }
-.service-list div h2{
+.profile-list>a>img{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+/* .service-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom:15px;
-}
-.service-list div i{
+} */
+/* .service-list div i{
 font-size: 50px;
  margin-bottom:30px ;
-}
-.service-list div a{
+} */
+/* .service-list div a{
     text-decoration: none;
     color: #fff;
     font-size:12px;
     margin-top:20px;
     display:inline-block;
-}
+} */
 /* ---------------------portfolio--------------- */
 #portfolio{
     padding: 50px 0;
@@ -373,7 +379,7 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 700px){
-   *{
+    *{
         margin-left:0;
     }
     body{
@@ -420,7 +426,7 @@ nav .fa-solid{
         
     }
     .sub-title{
-        font-size:40px;
+        font-size:30px;
 
     }
     .row1{
@@ -443,8 +449,10 @@ nav .fa-solid{
         font-size:16px;
         margin-right:20px;
     }
-    .service-list div{
-       padding:20px;
+   
+    .profile-list>a>img{
+        height:50px;
+        width:50px;
     }
     .work img, .layer{
         width:80%;

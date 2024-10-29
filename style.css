@@ -378,9 +378,12 @@ cursor:pointer;
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1000px){
     *{
         margin-left:0;
+    }
+    .container{
+        margin-right: 30px;
     }
     body{
         display:flex;
@@ -449,6 +452,9 @@ nav .fa-solid{
         font-size:16px;
         margin-right:20px;
     }
+    .layer>h3{
+        font-size: 10px;
+    }
    
     .profile-list>a>img{
         height:50px;
@@ -456,7 +462,7 @@ nav .fa-solid{
     }
     .work img, .layer{
         width:80%;
-        font-size:10px;
+        font-size:7px;
 
     }
     .layer a{
@@ -475,5 +481,6 @@ nav .fa-solid{
         }
      .copyright{
         font-size: 14px;
+        width:100%;
      }
 }
